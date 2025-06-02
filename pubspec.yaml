@@ -7,12 +7,20 @@ environment:
   sdk: ^3.7.2
 
 dependencies:
+  camera: ^0.11.1
   dartz: ^0.10.1
   dio: ^5.8.0+1
+  ffi: ^2.1.4
   flutter:
     sdk: flutter
+  flutter_onnxruntime: ^1.2.3
   freezed_annotation: ^3.0.0
   json_annotation: ^4.9.0
+  onnxruntime: ^1.4.1
+  opencv_dart: ^1.4.1
+  path: ^1.9.1
+  path_provider: ^2.1.5
+  permission_handler: ^12.0.0+1
 
 dev_dependencies:
   flutter_test:
@@ -24,3 +32,24 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/face_detection_yunet_2023mar.onnx
+    - assets/face_recognition_sface_2021dec.onnx
+    - assets/Backbone_MobileFaceNet_KD_CE_ArcFace.onnx
+    - assets/sface-baseline-casia.onnx
+    - assets/sface-kd-sface-3.onnx
+    - assets/sface-kd-sface-casia_real-ver2.onnx
+    - assets/selfies_3/21T1020820_HoVietTung/
+    - assets/selfies_3/24T1020459_TranDangNhatThanh/
+    - assets/selfies_3/24T1020202_NguyenQuangHuy/
+    - assets/selfies_3/24T1020557_NguyenThanhVu/
+    - assets/selfies_3/24T1020519_LeAnhTu/
+    - assets/selfies_3/21T1020372_NguyenDinhThaiHoa/
+    - assets/selfies_3/24T1020526_PhanCongTuan/
+    - assets/selfies_3/24T1020271_LeTanTranLong/
+    - assets/selfies_3/24T1020101_NguyenTrongDung/
+    - assets/selfies_3/23T1020175_TranDinhQuangHieu/
+    - assets/selfies_3/24T1020034_HaVanBao/
+    - assets/selfies_3/24T1020383_NguyenKimTheQuan/
+    - assets/selfies_3/24T1020435_NgoDacTrungTan/
+    - assets/selfies_3/21T1020759_PhanThanhToan/
